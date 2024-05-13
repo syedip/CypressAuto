@@ -4,10 +4,10 @@ jobs:
   fist_demo_job:
     name: The first job
     steps:
-     -name: Show the demo running
-    env:
-     VAR1: This is 
-     VAR2: A domo of 
-     VAR3: Github actions
-    run:
-     echo $VAR1 $VAR2 $VAR3
+     - name: Show the demo running
+       env:
+        VAR1: This is 
+        VAR2: A domo of 
+        VAR3: Github actions
+       run:
+        echo $VAR1 $VAR2 $VAR3
