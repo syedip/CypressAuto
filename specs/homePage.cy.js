@@ -1,4 +1,4 @@
-describe('a nice description', () => {
+describe('a nice description home page', () => {
     it('should visit the TabTracker', () => {
       cy.visit('https://www.google.co.in/');
     });
