@@ -3,6 +3,7 @@ on: [push]
 jobs:
   fist_demo_job:
     name: The first job
+    runs-on: ubuntu-20.04
     steps:
      - name: Show the demo running
        env:
