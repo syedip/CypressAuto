@@ -1,19 +1,14 @@
-import searchPage from '../pages/searchPage'
+describe('a nice description', () => {
+    it('should visit the TabTracker', () => {
+      cy.visit('https://www.google.co.in/');
+    });
+  });
 
-describe('Search', () => {
-  beforeEach(() => {
-    searchPage.goto()
-  })
-
-  it('should return search results', () => {
-    searchPage.searchFor('cypress')
-
-    searchPage.results().should('have.length.at.least', 1)
-  })
-
-  it('unfound search term should return no results message', () => {
-    searchPage.searchFor('sfdslkjsfkjslkdf')
-
-    searchPage.noResults().should('be.visible')
-  })
-})
+  describe('a nice description', () => {
+    it('should visit the TabTracker', () => {
+      cy.visit('https://www.google.co.in/');
+      cy.get(
+        'input[aria-label="I\'m Feeling Lucky"]',
+      ).should('be.visible');
+    });
+  });
