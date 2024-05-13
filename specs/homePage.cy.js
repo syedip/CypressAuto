@@ -1,18 +1,14 @@
-import homePage from '../pages/homePage'
+describe('a nice description', () => {
+    it('should visit the TabTracker', () => {
+      cy.visit('https://www.google.co.in/');
+    });
+  });
 
-describe('Home Page', () => {
-  beforeEach(() => {
-    homePage.goto()
-  })
-
-  it('should find an older post by loading more', () => {
-    const postTitle = 'Cypress.io Review'
-    homePage.findPostByLoadingMore(postTitle)
-
-    homePage.postTitleExists(postTitle).should('be.visible')
-  })
-
-  it('should display 7 posts per page', async () => {
-    homePage.posts().should('have.length', 7)
-  })
-})
+  describe('a nice description', () => {
+    it('should visit the TabTracker', () => {
+      cy.visit('https://www.google.co.in/');
+      cy.get(
+        'input[aria-label="I\'m Feeling Lucky"]',
+      ).should('be.visible');
+    });
+  });
