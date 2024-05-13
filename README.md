@@ -4,7 +4,7 @@
 
 An example project using the automation tool, [Cypress](https://www.cypress.io/). These tests are quite silly but are intended to provide examples of common actions you may need in your testing. I've included:
 - page objects
-- various ways of running the tests (via npm scripts)
+- various ways of running the tests (via npm scripts)..
 
 ## Rant
 Cypress is an _agressively_ opinionated framework... some of these opinions are at best, misguided :) YMMV. I know it's very popular... but honestly, **I would avoid Cypress if you can**. My issues with Cypress include:
